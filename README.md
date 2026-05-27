@@ -8,7 +8,7 @@
 
 ## Overview
 
-SimplifyRepo is a full-stack web application that uses AI (OpenAI GPT-4) to instantly analyze any public GitHub repository and provide:
+SimplifyRepo is a full-stack web application that uses AI (GEMINI gemini-3.5-flash) to instantly analyze any public GitHub repository and provide:
 
 | Module | Description | SRS Req |
 |--------|-------------|---------|
