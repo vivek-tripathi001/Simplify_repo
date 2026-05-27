@@ -28,7 +28,7 @@ SimplifyRepo is a full-stack web application that uses AI (OpenAI GPT-4) to inst
 |-------|-----------|
 | Frontend | React 18 + Vite, Mermaid.js, react-markdown |
 | Backend | Node.js + Express.js |
-| AI Engine | OpenAI GPT-4o API |
+| AI Engine | GEMINI gemini-3.5-flash |
 | External API | GitHub REST API v3 |
 | Real-time | Server-Sent Events (SSE) |
 | Deployment | Frontend: Vercel · Backend: Render.com |
@@ -39,7 +39,7 @@ SimplifyRepo is a full-stack web application that uses AI (OpenAI GPT-4) to inst
 
 - Node.js 18+
 - Git CLI installed on the backend server
-- OpenAI API key
+- GEMINI_API_KEY
 - GitHub personal access token (recommended — raises rate limit to 5,000 req/hr)
 
 ---
@@ -59,7 +59,7 @@ cd simplifyrepo
 cd backend
 npm install
 cp .env.example .env
-# Edit .env and fill in OPENAI_API_KEY and GITHUB_TOKEN
+# Edit .env and fill in GEMINI_API_KEY and GITHUB_TOKEN
 node src/index.js
 # Server starts on http://localhost:5000
 ```
@@ -130,8 +130,8 @@ See `backend/.env.example` for all configurable values:
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `PORT` | Backend server port | `5000` |
-| `OPENAI_API_KEY` | OpenAI API key (required) | — |
-| `OPENAI_MODEL` | Model to use | `gpt-4o` |
+| `GEMINI_API_KEY` | GEMINI API key (required) | — |
+| `GEMINI_MODEL` | Model to use | `gemini-3.5-flash` |
 | `GITHUB_TOKEN` | GitHub PAT (recommended) | — |
 | `SESSION_TTL_MS` | Session timeout (ms) | `3600000` (60 min) |
 | `RATE_LIMIT_MAX` | Max analysis requests per IP/hr | `10` |
