@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment — never commit secrets (NFR-S2)
+.env
+backend/.env
+frontend/.env
+
+# Build output
+dist/
+frontend/dist/
+.next/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ephemeral clone dirs created by SimplifyRepo
+tmp/
+/tmp/simplifyrepo_*
+
